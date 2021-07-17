@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Stopwatch</title>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="watch">
+            <h3>Stopwatch by Summaiya Siddiqi</h3>
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <div class="incircle">
+                    <span class="text hour" id="hours">0 </span>
+                    <span class="text minute" id="minutes"> 0 </span>
+                    <span class="text sec" id="seconds"> 0  </span>
+                    <span class="text msec" id="milliseconds"> 0 </span>
+                </div>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button class="button" id="start" onclick="startTimer()">Start</button>
+                <button class="button" id="reset" onclick="resetTimer()">Reset</button>
+                <button class="button" id="stop" onclick="stopTimer()">Stop</button>
+                <button class="button" id="lapbtn" onclick="setLaps()">Lap</button>
+            </div>
+           
+        </div>
+        <h3>Record of time</h3>
+        <div id="laps">
+           
+        </div>
+    </div>
+</center>
+    <script src="app.js"></script>
+</body>
+</html>
